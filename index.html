@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="https://zeno.fm/_next/image/?url=https%3A%2F%2Fimages.zeno.fm%2FGrKT0-LvnHvE44-iLfgKKyUfZXE-P599vYW9YO7uGPY%2Frs%3Afit%3A240%3A240%2Fg%3Ace%3A0%3A0%2FaHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2VmZDFjY2M1LTRjMzMtNDYxYS05YWMxLWJjMmI2MmExNTYzNy9pbWFnZS8_dXBkYXRlZD0xNzIwNjM0MzYzMDAw.webp&w=3840&q=100" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOPEASRURAL</title>
+    <style>
+        body {
+    background-image: url('https://st4.depositphotos.com/14715994/25110/v/450/depositphotos_251107316-stock-illustration-mexican-ethnic-embroidery-tribal-art.jpg');
+    background-size: cover; /* Hace que la imagen cubra toda la página */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+        header {
+            background-color: #640003;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #690000;
+        }
+
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #630606;
+            color: white;
+            padding: 12px 30px;
+            margin: 10px;
+            border: 2px solid #b11f24;
+            cursor: pointer;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            background-color: #5e0003;
+            color: white;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .active {
+            display: block;
+        }
+
+        h2 {
+            color: #6d0004;
+            border-bottom: 2px solid #740202;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #ff6600;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 150px;
+            margin: 10px;
+            border: 2px solid #eeff00;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>COOPEASRURAL</h1>
+    
+    </header>
+
+    <nav>
+        <div class="gallery"></div>
+            <img src="https://zeno.fm/_next/image/?url=https%3A%2F%2Fimages.zeno.fm%2FGrKT0-LvnHvE44-iLfgKKyUfZXE-P599vYW9YO7uGPY%2Frs%3Afit%3A240%3A240%2Fg%3Ace%3A0%3A0%2FaHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2VmZDFjY2M1LTRjMzMtNDYxYS05YWMxLWJjMmI2MmExNTYzNy9pbWFnZS8_dXBkYXRlZD0xNzIwNjM0MzYzMDAw.webp&w=3840&q=100" alt="Imagen 1">
+        </div>
+        <button onclick="showSection('info')">Información General</button>
+        <button onclick="showSection('agencias')">Agencias</button>
+        <button onclick="showSection('servicios')">Servicios</button>
+        <button onclick="showSection('horarios')">Horarios</button>
+        <img src="https://zeno.fm/_next/image/?url=https%3A%2F%2Fimages.zeno.fm%2FGrKT0-LvnHvE44-iLfgKKyUfZXE-P599vYW9YO7uGPY%2Frs%3Afit%3A240%3A240%2Fg%3Ace%3A0%3A0%2FaHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zL2VmZDFjY2M1LTRjMzMtNDYxYS05YWMxLWJjMmI2MmExNTYzNy9pbWFnZS8_dXBkYXRlZD0xNzIwNjM0MzYzMDAw.webp&w=3840&q=100" alt="Imagen 1">
+    </nav>
+
+    <section id="info" class="active">
+        <h2>Misión</h2>
+        <p>Somos Una cooperativa de ahorro y crédito con espírutu innovador, que brinda servicios financieros a la población del suroccidente del país. De una manera ágil confiable y segura, impulsando el desarrollo de nuestros asociados. </p>
+        <h2>Visión</h2>
+        <p>Ser la cooperativa financiera que contribuya al desarrollo económico de la gente emprendedora de Guatemala </p>
+        <h2>Nuestros valores</h2>
+        <h3>Honestidad: </h3>
+        <p>Trabajamos con virtud de decir la verdad, mantenimiento siempre relaciones transparentes con nuestros empleados y asociados.</p>
+        <h3>Responsabilidad:</h3>
+        <p>Cummplimos con eficiencia nuestros comproomisos adquiridos con los asociados respondiendo positivamente ante las consecuencias de nuestro trabajo. </p>
+        <h3>Liderazgo:</h3>
+        <p>Encaminamos las decisiones más importantres de nuestros asociados hacia el crecimiento y desarrollo de las familias guatemaltecas. </p>
+        <h3>Eficiencia: </h3>
+        <p>Trabajamos cumpliendo con gran capacidad cada una de las funciones otorgando siempre mayores beneficios a nuestros asociados. </p>
+        <h3>Cooperación: </h3>
+        <p>La cooéración es el resultado de una estrategia aplicada al objetivo (lo que se quiere lograr) desarrollando por grupos de personas o instituciones que comparten un mismo interés u objetivos.</p>
+        <h2>Colores institucionales</h2>
+        <p>Pertenecemos a la cosmovisión y cultura maya, por lo que compartimos los colores que son identidad de los pueblos originarios de Guatemala Rojo, blanco, amarillo y negro, cuatro colores que explican los cuatro ángulos del universo, los cuatro colores del maíz con los que fue formado el hombre. </p>
+        <h3>Rojo:</h3>
+        <p>Representa el este de donde sale el sol, significa el inicio de toda actividad en el tiempo y en el espacio. El maíz rojo, simboliza la sangre que corre unas nuestras venas.</p>
+        <h3>Amarillo:</h3>
+        <p>Representa el sur, también simboliza las cosechas o recolección de frutos. El maíz amarillo respresenta la creación de la piel del hombre.</p>
+        <h3>Negro:</h3>
+        <p>Representa el oeste, por donde se oculta el sol donde inicia el descanso o muerte, es el final de las actividades. El maíz negro representa la creación de los ojos del cabello del hombre.</p>
+        <h3>Blanco:</h3>
+        <p>Representa el norte, contribuye el cimiento del cambio y del saber. Represeta la espiritual y el descanso del nahual de los antepasados mayas. El maíz blanco representa la creación de los huesos del hombre.</p>
+
+        <div class="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjBvYwQe3sjcvOpMbX6M40Wwn-7LEQ4P-sGQ&s" alt="Imagen 1">
+        </div>
+    </section>
+
+    <section id="agencias">
+        <h3>Actualmente contamos con cuatro agencias y puntos de servicio</h3>
+        <h2>Oficina Central</h2>
+        <p>Paraje Xecoxom I, Aldea Paxtocá, Tototnicapán                                       Teléfono: 7965-5500</p>
+        <div class="gallery">
+            <img src="https://www.coopeasrural.com/wp-content/uploads/2019/07/coope-asrural_paxtoca.jpg" alt="Imagen 3">
+        </div>
+        <h2>Agencia La Estancia Cantel</h2>
+        <p>Aldea Estancia Cantel                                                               Teléfono: 7965-5502</p>
+        <div class="gallery">
+            <img src="https://www.coopeasrural.com/wp-content/uploads/2019/07/coope-asrural_la_estancia.jpg" alt="Imagen 4">
+        </div>
+        <h2>Agencia Chirijquiac</h2>
+        <p>Aldea Chirijquiac, Cantel                                                           Teléfono: 7965-5503</p>
+        <div class="gallery">
+            <img src="https://www.coopeasrural.com/wp-content/uploads/2019/08/ccoope_asrural_chirijquiac-compressor.jpg" alt="Imagen 5">
+        </div>
+        <h2>Agencia Pasac I</h2>
+        <p>Aldea Pasac I, Cantel                                                               Teléfono: 7965-5504</p>
+        <div class="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzUvjOVNcvmoRmJDmcyZgYJc75nDHHzw8tbg&s" alt="Imagen 6">
+        </div>
+        <h2>Punto de servicio </h2>
+        <p>Centro comercial Graceli                                                             </p>
+
+        <div class="gallery">
+            <img src="https://www.coopeasrural.com/wp-content/uploads/2019/10/a2.jpg" alt="Imagen 3">
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <h3>Ahorros</h3>
+        <h3>Créditos</h3>
+        <h3>Pago de servicios</h3>
+        <h3>Cobro de remesas</h3>
+        <h3>Seguros</h3>
+
+        <div class="gallery">
+            <img src="https://www.coopeasrural.com/wp-content/uploads/2019/10/a2.jpg" alt="Imagen 5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdcNLnpxSMIoZ_RNi73XMMq2yD53jbVslmJjURJA5FXf6Upzw9a_8eKpXY2B3kYUWw0Po&usqp=CAU" alt="Imagen 6">
+        </div>
+    </section>
+
+    <section id="horarios">
+        <h2>Horarios</h2>
+        <p>Le atendemos lunes a viernes de 8:00h a 13:00h  y de 14:00h a 17:000h y días sábados de 8:00h a 12:00h y de 14:00h a 17:00 </p>
+
+        <div class="gallery">
+            <img src="https://www.coopeasrural.com/wp-content/uploads/2020/01/281120191.png" alt="Imagen 7">
+        </div>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
